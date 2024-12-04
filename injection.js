@@ -416,6 +416,8 @@ function modifyCode(text) {
 					const module = args.length > 1 && getModule(args[1]);
 					if (module) {
 						module.toggle();
+						game$1.chat.addChat({
+							
 						});
 					}
 					else if (args[1] == "all") {
