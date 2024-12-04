@@ -1044,10 +1044,10 @@ function modifyCode(text) {
 			chatdisablermsg = chatdisabler.addoption("Message", String, "youtube.com/c/7GrandDadVape");
 			new Module("FilterBypass", function() {});
 
-			const Creative Mode = new Module("SurvivalMode", function(callback) {
+			const survival = new Module("SurvivalMode", function(callback) {
 				if (callback) {
-					if (player$1) player$1.setGamemode(GameMode.fromId("creative"));
-					creative.toggle();
+					if (player$1) player$1.setGamemode(GameMode.fromId("survival"));
+					survival.toggle();
 				}
 			});
 
