@@ -516,9 +516,7 @@ function modifyCode(text) {
 					keybindCallbacks[this.bind] = function(j) {
 						if (Game.isActive()) {
 							module.toggle();
-							game$1.chat.addChat({
-								text: module.name + (module.enabled ? " Enabled!" : " Disabled!"),
-								color: module.enabled ? "lime" : "red"
+							
 							});
 						}
 					};
