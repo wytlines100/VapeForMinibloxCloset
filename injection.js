@@ -415,10 +415,7 @@ function modifyCode(text) {
 				if (args.length > 1) {
 					const module = args.length > 1 && getModule(args[1]);
 					if (module) {
-						module.toggle();
-						game$1.chat.addChat({
-							text: module.name + (module.enabled ? " Enabled!" : " Disabled!"),
-							color: module.enabled ? "lime" : "red"
+						module.toggle()
 						});
 					}
 					else if (args[1] == "all") {
